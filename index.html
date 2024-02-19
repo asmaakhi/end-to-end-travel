@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS Ticket Survice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CDN -->
+    <style>
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .banner {
+            font-family: "Inter", sans-serif;
+        }
+        .selectedclass{
+            background-color:#1DD100 ;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body class="banner">
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl font-raleway font-bold">AsTha Ticket Survice</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <a class="btn text-[#1DD100] bg-green-200 border-[#1DD100] border-2">Bus <img src="images/bus-icon.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <header class="flex   justify-center">
+
+        <div
+            class="bg-[url(images/banner.png)] bg-center bg-no-repeat flex flex-col justify-center items-center border-2 space-y-9 lg:min-w-[1171px] min-h-[550px] text-center">
+            <h1 class="font-raleway font-extrabold text-6xl">End-to-End Travel with<br> <span class="text-[#1DD100]">AsTha
+                    Paribahan</span> </h1>
+            <p class="text-white  "> WorldTrips lists the best travel websites full of resources to help you 
+
+                <br>  find the most unique accommodations or simply the best deals on flights and lodging.
+
+            </p>
+            <button onclick="scrollSection()" class="btn bg-[#1DD100] border-none text-white hover:bg-green-300 hover:text-green-900">Buy
+                Tickets</button>
+        </div>
+
+    </header>
+    <section class="flex justify-center relative">
+        <div class="absolute lg:-top-16 flex flex-col lg:flex-row space-y-3 lg:space-x-6">
+            <div class="stats  shadow border-b-2 border-[#1DD100]">
+
+                <div class="stat flex flex-row">
+                    <img src="images/people.png" alt="">
+                    <div>
+                        <div class="stat-value">500K+</div>
+                        <div class="stat-desc">Registered users</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="stats  shadow border-b-2 border-[#1DD100]">
+
+                <div class="stat flex flex-row">
+                    <img src="images/ticket-cupon.png" alt="">
+                    <div>
+                        <div class="stat-value">1.7 lacks</div>
+                        <div class="stat-desc">Tickets sold</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="stats shadow border-b-2 border-[#1DD100]">
+
+                <div class="stat flex flex-row">
+                    <img src="images/stoppage.png" alt="">
+                    <div>
+                        <div class="stat-value">89,000</div>
+                        <div class="stat-desc">Rental partners</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="px-5 lg:px-20 lg:mt-32 mt-[500px]">
+
+        <div class=" flex justify-center">
+            <h1 class="text-3xl font-extrabold">Best offers for you</h1>
+        </div>
+
+
+        <div class=" flex lg:flex-row flex-col gap-5  lg:px-20 mt-5 ">
+
+        
+            <div
+                class=" lg:w-1/2 h-52 bg-yellow-500 rounded-2xl flex  justify-between px-5  lg:px-10 items-center text-black">
+
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">15% OFF</h1>
+                    <p>on your next purchase <br>
+                        <span class="text-gray-700">use by January 2024</span>
+                    </p>
+                </div>
+                <div class=""> <img src="images/cupon-devider.png" alt=""></div>
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">NEW15</h1>
+                    <p class="text-gray-700 ">Coupon Code</p>
+                </div>
+
+
+            </div>
+
+
+
+            <div
+                class=" lg:w-1/2 h-52 bg-pink-300 rounded-2xl flex justify-between px-5 lg:px-10 items-center text-black">
+
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">20% OFF</h1>
+                    <p>on your next purchase<br>
+                        <span class="text-gray-700">use by January 2024</span>
+                    </p>
+                </div>
+                <div class=""> <img src="images/cupon-devider.png" alt=""></div>
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">Couple 20</h1>
+                    <p class="text-gray-700 ">Coupon Code</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-center my-10">
+
+            <button class="btn bg-[#1DD100] text-white border-none hover:bg-green-300 hover:text-green-900">Buy
+                Tickets</button>
+
+        </div>
+
+
+    </section>
+
+    <section id="ticket-section">
+        <div class="mt-40 border-[#1DD100] border-t-2 rounded-t-[20px] lg:rounded-t-[100px]">
+            <div class=" flex flex-col items-center mt-40 space-y-4">
+                <h1 class="text-3xl font-extrabold">AsTha Paribahan</h1>
+                <p class="font-extralight px-3 lg:px-10 text-center">WorldTrips lists the best travel websites full of resources to help you 
+                    <br>  find the most unique accommodations or simply the best deals on flights and lodging.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div
+                class=" mt-10 pt-4 h-96 bg-white rounded-2xl flex flex-col lg:flex-row justify-between lg:mx-24 lg:px-5 items-center text-black">
+
+                <div class=" h-full py-2 lg:max-w-[880px]  ">
+                    <div class=" flex justify-between ">
+                        <div class="flex gap-2 p-2">
+                            <img src="images/bus-logo.png" alt="">
+                            <div class="">
+                                <h1 class="font-bold text-xl">Astha Paribahan</h1>
+                                <p class="text-sm">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                    
+                        <div class=" items-center flex gap-2 px-2 rounded-xl bg-green-100">
+                            <img src="images/seat-green.png" alt="">
+                            <p class="text-sm "> <span id="seat-left" class="font-bold">40</span> Seats left</p>
+                        </div>
+                    </div>
+            
+                    <div class=" bg-gray-100 rounded-lg p-5 mt-5 h-[250px]">
+                        <div class="flex justify-between">
+                            <p>Route</p>
+                            <p>Dhaka - Sylhet</p>
+                        </div>
+
+                        <div class=" border-y-2 border-dashed border-gray-400 my-8 py-4 flex justify-between">
+                            <p>Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <div class="flex gap-2 justify-around ">
+
+                            <div class="bg-gray-200 rounded-lg p-2">
+                                <p>Boarding Point - Laxmipur</p>
+                            </div>
+
+                            <div class="bg-gray-200 rounded-lg p-2">
+                                <p>Dropping Point - Bogura</p>
+                            </div>
+
+                            <div class="bg-gray-200 rounded-lg p-2">
+                                <p>Est. Time - 11 Hour</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+        
+                <div class="absolute hidden  lg:inline-block lg:right-72"> <img src="images/info-devider.png" alt="">
+                </div>
+    
+                <div class="flex flex-col relative  mt-10 lg:mt-0 items-center">
+                    <img src="images/fare.png" alt="">
+                    <h1 class="text-3xl font-extrabold">550 Taka</h1>
+                    <p class="text-gray-700 ">Per Seat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-60 lg:mt-10">
+        <div class="flex flex-col lg:flex-row ">
+        
+            <div class="flex-1 space-y-2 m-5 lg:ml-28 lg:pr-10 border-dashed border-none lg:border-r-2">
+                <h1 class="text-xl font-semibold">Select Your Seat</h1>
+                <div class="flex justify-between border-dotted border-y-4 border-gray-300">
+                    <div class="flex py-3">
+                        <img src="images/seat-gray.png" alt="">
+                        <p class="text-gray-600">Available</p>
+                    </div>
+                    <div class="flex py-3">
+                        <img src="images/seat-green.png" alt="">
+                        <p class="text-[#1DD100]">Selected</p>
+            
+                    </div>
+
+                </div>
+                <div>
+                    <div>
+                        <div class="flex justify-end mb-5 ">
+                            <img src="images/tabler-icon-steering-wheel.svg" alt="">
+                        </div>
+                        <div id="seat-container">
+        
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">A</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                             class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">A1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">A2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">A3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">A4</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">B</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">B1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">B2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">B3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">B4</button>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">C</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">C1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">C2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">C3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">C4</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">D</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">D1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">D2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">D3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">D4</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">E</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">E1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">E2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">E3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">E4</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">F</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">F1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">F2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">F3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">F4</button>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">G</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">G1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">G2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">G3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">G4</button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">H</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">H1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">H2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">H3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">H4</button>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">I</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">I1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">I2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">I3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">I4</button>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="flex mb-5  ">
+                                <div class="w-[56px] h-[56px]  inline  items-center flex justify-center ">
+                                    <h1 class="text-gray-500 text-2xl  inline">J</h1>
+                                </div>
+                                <div class="flex flex-row  justify-between w-full ">
+                                    <div class="space-x-1 lg:space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">J1</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">J2</button>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">J3</button>
+                                        <button
+                                            class="text-gray-500 hover:bg-green-300 seat text-lg w-14 lg:w-[80px] h-[56px] btn ">J4</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-1 m-5 lg:mr-28  ">
+                <h1 class="text-xl font-semibold border-dotted border-b-4 pb-2 ">Payment</h1>
+                <div class="mt-5 pb-3 flex justify-between">
+                    <p>Seat <span id="selected-seat" class="seat-count bg-[#1DD100] p-1 rounded-sm text-white">0</span></p>
+                    <p>Class</p>
+                    <p>Price</p>
+                </div>
+                <section class="border-dashed border-gray-300 py-3 border-y-2" >
+
+                </section>
+                <div class="flex py-3 justify-between">
+                    <p>Total Price</p>
+                    <p>BDT <span id="total-price" class="font-bold">0</span></p>
+                </div>
+                <div>
+                    <input id="cupon-name" type="text" placeholder="Please Restart the page" class="p-4 rounded-lg bg-slate-200">
+                    <button  id="apply-btn" class="btn bg-[#1DD100] text-white border-none hover:bg-green-300 hover:text-green-900 ">Apply</button>
+                </div>
+                <div class="flex py-3 mb-4 justify-between border-dashed border-gray-300 py-3 border-b-2 ">
+                    <p>Grand Total</p>
+                    <p>BDT <span id="Grand-price" class="font-bold">0</span></p>
+                </div>
+
+                <div>
+                    <p class="font-bold my-4">Passenger Name*</p>
+                    <input type="text" placeholder="Enter your name" class="p-4 rounded-lg bg-slate-200 w-full">
+                    <p class="font-bold my-4">Passenger Phone Number*</p>
+                    <input type="phone" placeholder="Enter your number" class="p-4 rounded-lg bg-slate-200 w-full">
+                    <p class="font-bold my-4">Passenger Email*</p>
+                    <input type="email" placeholder="Enter your Email" class="p-4 rounded-lg bg-slate-200 w-full">
+                </div>
+                <a href="result.html"><button class="btn my-10 w-full bg-[#1DD100] text-white border-none hover:bg-green-300 hover:text-green-900">Submit</button>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <footer class="footer footer-center p-10 bg-black text-white text-base-content rounded">
+            <nav class="grid grid-flow-col gap-4">
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Services</a>
+              <a class="link link-hover">Blog</a>
+            </nav> 
+            <nav>
+              <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+              </div>
+            </nav> 
+            <aside>
+              <p>Copyright © 2024 - All right reserved by Asma Akhi</p>
+            </aside>
+          </footer>
+    </footer>
+
+
+
+
+    <script>
+        let count=0;
+        let ticketCount=0;
+    </script>
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
